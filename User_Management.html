@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style1.css">
+    <title>Admin Panel Dashboard</title>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="navbar-left">
+                    <ul>
+                        <h2>User Management</h2>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            <div class="navbar-right">
+                
+                    
+               
+                <div class="notification-icon">
+                    <span><img src="Icons\NotificationIcon.png" alt="Notification"></span>
+                </div>
+                
+                <div class="profile-section">
+                    <img src="Icons\ProfileIcon.png" alt="Profile Image">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+            
+    <div class="container">
+        <aside>
+            <ul>
+                <h3>
+                <button id="Ham" class="HamBG">&#9776;</button>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="User_Management.html">User Management</a></li>
+                <li><a href="newuser.html">New User</a></li>
+                
+                <li><a href="Logout.html">Logout</a></li>
+            </h3>
+                <div class="metrics">
+                    <div class="metric1">
+                        <img src="Icons\ProFeatures.png" alt="Logo">
+                        
+                    </div>
+                    
+                </div>
+            
+            </ul>
+        </aside>
+    
+        <section id="dashboard-content">
+            <form class="search-form">
+                <input type="text" placeholder="Search Users">
+                <form class="search-form">
+                    <button type="submit">
+                        <img src="Icons\Searchicon.png" alt="Search">
+                    </button>
+
+                    <select class="filter">
+                        <option value="all">Alphabetical</option>
+                        <option value="sales">UID</option>
+                        <option value="marketing">User Name</option>
+                    </select>
+                    
+                </form>
+                
+            </form>
+            <form class="search">
+                <script>
+                    function navigateToIndex() {
+                        window.location.href = "index.html";
+                    }
+                </script>
+            </head>
+            <body>
+                
+            
+                
+                
+                
+            </form>
+
+            
+
+
+            
+
+
+
+
+            
+                
+            
+          
+            <title>User Details Table</title>
+        </head>
+        <body>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>UID</th>
+                        <th>User Name</th>
+                        <th>E-mail Address</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>511</td>
+                        <td>Joe Phillips</td>
+                        <td>phillipsjoe29@gmail.com</td>
+                        <td>Sales</td>
+                        <td>
+                            <button onclick="viewAction()">View</button>
+                            <button onclick="editAction()">Edit</button>
+                            <button onclick="deleteAction()">Delete</button>
+                        </td>
+                    </tr>
+                    
+              
+        
+                    <script>
+                        function navigateToAnotherPage() {
+                            window.location.href = "index.html";
+                        }
+        
+                        function viewAction() {
+                            alert('View action clicked!');
+                        }
+        
+                        function editAction() {
+                            alert('Edit action clicked!');
+                        }
+        
+                        function deleteAction() {
+                            alert('Delete action clicked!');
+                        }
+                    </script>
+                    <tr>
+                        <td>512</td>
+                        <td>Alex Styles</td>
+                        <td>stylesalex96@gmail.com</td>
+                        <td>Marketing</td>
+                        <td><button onclick="viewAction()">View</button>
+                            <button onclick="editAction()">Edit</button>
+                            <button onclick="deleteAction()">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>513</td>
+                        <td>Ruby Watson</td>
+                        <td>rubyw54@gmail.com</td>
+                        <td>Design</td>
+                        <td><button onclick="viewAction()">View</button>
+                            <button onclick="editAction()">Edit</button>
+                            <button onclick="deleteAction()">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>514</td>
+                        <td>James Salve</td>
+                        <td>jemmysalve@gmail.com</td>
+                        <td>Development</td>
+                        <td><button onclick="viewAction()">View</button>
+                            <button onclick="editAction()">Edit</button>
+                            <button onclick="deleteAction()">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>515</td>
+                        <td>John Walter</td>
+                        <td>walterjohn79@gmail.com</td>
+                        <td>Testing</td>
+                        <td><button onclick="viewAction()">View</button>
+                            <button onclick="editAction()">Edit</button>
+                            <button onclick="deleteAction()">Delete</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+    <script>
+       
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            document.querySelector('aside').classList.toggle('sidebar-hidden');
+        });
+    </script>
+
+    <script>
+        
+            function navigateToIndex() {
+                window.location.href = "index.html";
+            }
+        
+        
+        function showAddUserForm() {
+            var newUserForm = document.getElementById('new-user-form');
+            newUserForm.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

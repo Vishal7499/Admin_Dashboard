@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style3.css">
+    <title>Admin Panel Dashboard</title>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <ul>
+                    <h2>Log Out</h2>
+                </ul>
+            </div>
+            
+            <div class="navbar-right">
+                <div class="notification-icon">
+                    <span><img src="Icons\NotificationIcon.png" alt="Notification"></span>
+                </div>
+                
+                <div class="profile-section">
+                    <img src="Icons\ProfileIcon.png" alt="Profile Image">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+            
+    <div class="container">
+       
+    
+        <section id="dashboard-content">
+            <div class="box">
+                <img src="Icons\WarningIcon.png" alt="Logo" class="logo">
+                <h2>Are you sure you want to log out?</h2>
+            
+                <div class="button-group">
+                <button onclick="handleYes()">Yes</button>
+                    <button onclick="handleNo()">No</button>
+                </div>
+                <div class="button-group2">
+                    <button >Back to Dashboard</button>
+
+                </h2>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        
+        
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            document.querySelector('aside').classList.toggle('sidebar-hidden');
+        });
+
+        function handleYes() {
+            alert('Yes button clicked!');
+        }
+
+        function handleNo() {
+            alert('No button clicked!');
+        }
+    </script>
+
+</body>
+</html>

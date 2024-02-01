@@ -1,0 +1,441 @@
+
+/*
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.logo-container img {
+    width: 150px; 
+    height: 56px;
+}
+.notification-icon img{
+    margin-left: 100px;
+    margin-right: 50px;
+    border: none;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+.Dashboard{
+    margin-top: 50px;
+}
+
+
+.profile-section{
+    margin-right: 50px;
+}
+
+.metric1 {
+    border-radius: 20px;
+    
+  
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 400px; 
+    height: 400px; 
+    
+}
+
+.metric1 img {
+    width: 110px; 
+    height: 0px; 
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+nav {
+    background-color: white; 
+    color: black;
+    padding: 4px;
+    margin-left: 220px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-left li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+
+.navbar-left a:hover {
+    text-decoration: underline;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+.search-form input {
+    padding: 8px;
+    margin-right: 15px;
+    border: none;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+}
+
+.search-form button {
+    padding: 8px;
+    background-color:#2870ff;
+    border: none;
+    cursor: pointer;
+    margin-right: 280px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+}
+
+
+.notification-icon {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-section img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container {
+    display: flex;
+     
+    max-width: 35000px; 
+    margin: 0 auto; 
+    margin-top: 30px;
+
+}
+
+.metric1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+.HamBG{
+    margin-left: 150px;
+    margin-top: -70px;
+}
+
+#dashboard-content {
+    flex: 1;
+    padding-top: 50px;
+}
+
+
+aside {
+    text-align: middle;
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 0;
+    border-right: 1px solid #0b0000;
+}
+
+#toggleSidebar {
+    order: -1; 
+    margin-bottom: 10px; 
+}
+
+.container {
+    display: flex;
+    max-width: 35000px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+
+#dashboard-content {
+    flex: 1;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+a {
+    display: block;
+    padding: 2px 1px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #555;
+    text-decoration: overline;
+    text-align: center;
+}
+
+a.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    transition: margin-left 0.3s; 
+}
+
+.container-hidden {
+    margin-left: 0; 
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin-left: 40px;
+    padding-top: 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    flex: 1;
+}
+
+.metrics {
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.metrica{
+    border-radius: 20px;
+    background-color: #22d7f3; 
+    border: 1px solid #1e9fd6;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    flex: 1 0 calc(28.333% - 30px);
+}
+.metricb{
+    border-radius: 20px;
+    background-color: #3ded97;
+    border: 1px solid #3ded97;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    flex: 1 0 calc(28.333% - 30px);
+}
+.metricc{
+    border-radius: 20px;
+    background-color: #e9b720; 
+    border: 1px solid #da7e1a;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    flex: 1 0 calc(28.333% - 30px);
+}
+metrics {
+    border-radius: 20px;
+    background-color: #d3aaca; 
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    flex: 1 0 calc(28.333% - 30px);
+}
+
+.statistics {
+    
+    display: flex;
+    
+    padding: 15px;
+    margin: -29px;
+    text-align: center;
+    flex: 1 0 calc(33.333% - 30px);
+    
+}
+
+.chart-box img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 150px; 
+}
+
+.chart-box img{
+    border-radius: 50px;
+    height: 500px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex: 1 0 calc(50% - 40px);
+}
+.earning-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; 
+}
+
+
+.chart-box{
+    border-radius: 50px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex: 1 0 calc(50% - 40px);
+}
+.earning-box {
+    border-radius: 50px;
+    
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex: 1 0 calc(50% - 40px);
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+   
+
+    nav {
+        margin-left: 0;
+    }
+
+    .navbar-left ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-left li {
+        margin-bottom: 10px;
+    }
+
+    .search-form input {
+        margin-right: 0;
+    }
+
+    .search-form button {
+        margin-right: 0;
+    }
+
+    .notification-icon img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profile-section {
+        margin-right: 0;
+    }
+
+    .HamBG {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric1 {
+        width: 100%; 
+        height: auto;
+    }
+
+    .metrics-container {
+        margin-top: 20px;
+    }
+
+    .metrica,
+    .metricb,
+    .metricc {
+        flex: 1 0 100%;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-box,
+    .earning-box {
+        flex: 1 0 100%;
+    }
+}
+
+*/

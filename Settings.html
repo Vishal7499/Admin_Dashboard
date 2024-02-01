@@ -1,0 +1,137 @@
+
+<!-- 
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style2.css">
+    <title>Admin Panel Dashboard</title>
+    <style>
+        .container {
+            transition: margin-left 0.3s; 
+        }
+
+        .container-hidden {
+            margin-left: 0; 
+        }
+
+        
+        .security-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .security-buttons button {
+            padding: 10px;
+            background-color: #2870ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .security-buttons button:hover {
+            background-color: #1652a2;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <ul>
+                    <li class="logo-container"><img src="Icons\CompanyLogo.png" alt="Logo"></li>
+                </ul>
+            </div>
+            
+            <div class="navbar-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search">
+                </form>
+                
+                <div class="notification-icon">
+                    <span><img src="Icons\NotificationIcon.png" alt="Notification"></span>
+                </div>
+                
+                <div class="profile-section">
+                    <img src="Icons\ProfileIcon.png" alt="Profile Image">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+            
+    <div class="container">
+        <aside>
+            <ul>
+                
+                <button id="toggleSidebar" class="HamBG">&#9776;</button>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="User_Management.html">User Management</a></li>
+                <li><a href="newuser.html">New User</a></li>
+                <li><a href="Settings.html">Settings</a></li>
+                <li><a href="Logout.html">Logout</a></li>
+                
+                <div class="metrics">
+                    <div class="metric1">
+                        <img src="Icons\ProFeatures.png" alt="Logo">
+                    </div>
+                   
+                </div>
+            </ul>
+        </aside>
+        
+        <section id="dashboard-content">
+            <h2>Dashboard Overview</h2>
+            <div class="metrics">
+                <div class="metrica">
+                    <p>StandardWings is committed to protecting user privacy and ensuring the secure handling of personal data. Administrators can define and communicate the platform's data usage policy here. They can specify how user data is collected, stored, and used, including details on data retention periods, purposes of data processing, and any third parties with whom data may be shared.</p>
+                    <p>View More</p>
+                </div>
+                
+            </div>
+            
+            <h2>Security</h2>
+            <div class="statistics">
+                <div class="chart-box">
+                    <div class="security-buttons">
+                        <button onclick="changePassword()">Change Password</button>
+                        <button onclick="enableTwoFactorAuth()">Enable Two-factor Authentication</button>
+                    </div> 
+                    
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </div>
+
+    <script>
+        
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            document.querySelector('aside').classList.toggle('sidebar-hidden');
+            document.querySelector('.container').classList.toggle('container-hidden');
+        });
+
+       
+        function changePassword() {
+           
+        }
+
+        function enableTwoFactorAuth() {
+            
+        }
+    </script>
+
+</body>
+</html>
+
+-->
